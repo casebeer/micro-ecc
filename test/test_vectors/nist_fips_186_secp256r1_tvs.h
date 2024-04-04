@@ -1,0 +1,678 @@
+#include "test_vector.h"
+Test nist_fips_186_secp256r1_tvs[] = {
+    {
+      /* test vector 0 for P-256 */
+      "002a10b1b5b9fa0b78d38ed29cd9cec18520e0fe93023e3550bb7163ab4905c6", /* private_key */
+      "e9cd2e8f15bd90cb0707e05ed3b601aace7ef57142a64661ea1dd7199ebba9acc96b0115bed1c134b68f89584b040a194bfad94a404fdb37adad107d5a0b4c5e", /* public_key */
+      "00c2815763d7fcb2480b39d154abc03f616f0404e11272d624e825432687092a", /* k */
+      "b46806837d5e311b7cb075ef63e6f5489a4bf099", /* SHA1 hash */
+      "15bf46937c7a1e2fa7adc65c89fe03ae602dd7dfa6722cdafa92d624b32b156e", /* R */
+      "59c591792ee94f0b202e7a590e70d01dd8a9774884e2b5ba9945437cfed01686", /* S */
+    },
+    {
+      /* test vector 1 for P-256 */
+      "00fc37666c6b87d7a4701b149003f8767fa3206d3e5236ca317122b3cec5900a", /* private_key */
+      "6be8613c7022a78a24d38c44befd48446648d4bd1345e1470c7b5f8edb56823b58d84900fb28f15fde66bc264508feee5e54c0fa9712ce0059902efb46c349a3", /* public_key */
+      "00cb00d310146dc133ca5dddca6f96a20519de714621579381bccaac247929b5", /* k */
+      "a50a98ea609e64c0c1ed198113ffc4e038f34092", /* SHA1 hash */
+      "43f40b6413531e99ee4ebb2fb4c58b89eb7796f84caef33c2b193577d16eab84", /* R */
+      "642c95930bc2a155ee2ff8a94202cfbb8349d3f6841a7bb789587a8a1cfedbea", /* S */
+    },
+    {
+      /* test vector 2 for P-256 */
+      "000dd9c37b06a662bbb327e7e7537a473300de497b3dcd890f3a25d90071a608", /* private_key */
+      "0763b24636d112294ad6d85fd7640b4defdef5df245e53c42750a680838e1150b87e87a4b35355c531709156961e64d8c17f63a438aad652fcc98604a33be2a7", /* public_key */
+      "0045af0ce21481f3daedc4d34b611c75cb1f8a0715f30bf2fb45b017258584d5", /* k */
+      "dbeaadeb4a5f28982bac4bbd9db36c6dd0f49598", /* SHA1 hash */
+      "6f0a3866109007c528e4f75bc4be8f4459066257d354e750f63d073f2b7b8d36", /* R */
+      "ae800de3eba87a1088900570ca0c2680d4bf8f6a7f706501626503db4102cd0a", /* S */
+    },
+    {
+      /* test vector 3 for P-256 */
+      "0043fb051277a6cde808a34ea75d38a8173f80ece46740828b0758d829d8ca3c", /* private_key */
+      "fab5c35a7a6e214f7a499866aa50ef16b8d92e29e66a0b6319721522db101eae8f3f89ad8d369e4873e566f21b8adf42304cb81019c401c1b1de4029e0245d75", /* public_key */
+      "0036797bf01ddb25973cd9b030b50632d621aac0c653536e751c31c4367de559", /* k */
+      "2e32a0b7a364d472f6d0529c6a337b1fe8f555eb", /* SHA1 hash */
+      "17cfd4d7b43c06a2a439bc6d04c2cf4ff8ba8324c4a1c8a329a6189f5da5c23b", /* R */
+      "9302909d1317bbecd95d10eead9ab69433012eddf917c12f6f91adf9cc4a7f09", /* S */
+    },
+    {
+      /* test vector 4 for P-256 */
+      "00d741ac1103eea6de3031270fde37cb680c1728f05fc08557bb35ee61ea0bf7", /* private_key */
+      "08ef74016b7d4dc64c47987b11967437bfc6f7fa2d570063c6b72f1c8d5125ed1fc1ccb317c3923825ac8526358fe4b00d4ca1526d86d7309a004acf0cfae637", /* public_key */
+      "005b5852327259b12ba08f9a0e1c82d87f6cdc833dd69fedf05bd9283b8ebc61", /* k */
+      "a71a71ecaa1db2d7c2a162b3aff79f5fb66f1dff", /* SHA1 hash */
+      "9908aae43deed6b5651d9a4d0041ecc976e819ae64e3e938e0af8b3d41a76b3e", /* R */
+      "32b17d68019e94a362d4178aa954f5cfefe0fd659c341c88f4f068ebf48b9773", /* S */
+    },
+    {
+      /* test vector 5 for P-256 */
+      "00c2fe3b0d4f3d6909a399a43247a21292ff633f8f0f053e39459af6b8437e6b", /* private_key */
+      "1baf23f86d78aa82da248d2f9acf65dfa2e7848a8bdebb93199168e6f0d4f5f9ca61985bfcd0ac55f95b73f07774d8714b6c3b80ddd6123b3dac8a45c34e435b", /* public_key */
+      "00c8c9e7cf43fe62a67a3c998c36931a3a5332f3a47972c26a7813f405ffe851", /* k */
+      "4365307f9c60aa620450116909776c8b8cdd16c0", /* SHA1 hash */
+      "ddf8fc4d06ef4b7b69e26ac9c00ac7ed9ae55012e9f2a97f4eb99cabae393660", /* R */
+      "1f41ca553dbb07d8e7d68e3650c5777e42b3473e31908688c0d7324afa637ed0", /* S */
+    },
+    {
+      /* test vector 6 for P-256 */
+      "0037d4ac2a27520b1303990391805aa3c190656e30cc8c5b54b489ac4d0b295e", /* private_key */
+      "834f19c9364b77ec0acd04997f1b8da7e35c7f9d90d305e4bb1505d0c072c2d97343fc4f25507e000a12bf5cc5ca99e310383d0824807a74fb31d3bc89b94d69", /* public_key */
+      "001195d3f0a9f06fd529e351ea3defebd8a68fa6228fcba6e2c23167855d931b", /* k */
+      "442fea471c1127556e4b62628a5dce3a20902636", /* SHA1 hash */
+      "2a7bbeba9a1925e64c6e829d88c7a893c2960273ac40d82ea9b66c981a24b346", /* R */
+      "5077207032c8a7bfd4ae876f22bb54b3ec4d7f394cf0c152f636a78fda8eb35a", /* S */
+    },
+    {
+      /* test vector 7 for P-256 */
+      "00b3ea9154c84749f4d5ee1160fdd1ca699187f3b339d4bd8cac3266e0714d0b", /* private_key */
+      "d25e48c881cd1a8bf8017507a6511e1c49409802f14d226b56507a280f8240b1e0ad278311c6e08b65e7b1bb86627a43fc45d04a89c42804b55a3788056556e2", /* public_key */
+      "0023ded046abaa7858849550559af1ab74205904ba560a050abfa9358958622e", /* k */
+      "7b2fd81cb4f9b24a4ac8c9a58666d0e1b09dc557", /* SHA1 hash */
+      "fe7e110c27f69d4d8c319113676c83d7b9b4d8dedd5db6a75853a8b399aa2789", /* R */
+      "c5d7710ef88a11200d84c702b28d174800bbf5a9e08ebbd639fd4fb8aa6dd4db", /* S */
+    },
+    {
+      /* test vector 8 for P-256 */
+      "00480ab6fa574aeaa0411380cbfdc387792432c3e0b4eaeaf1617096f4f11b89", /* private_key */
+      "afb9820fbab1f31e84b7bed0ef93053eec01e7099100bb290df12a59028d0a37f3962209d8683a907b8c201389b4cd2ab4d0782166a88dc4204a479e7b34d101", /* public_key */
+      "0006a94c845c7ef871b0c440bbcb997f688b3fee833354b6981702bc3159479c", /* k */
+      "803102eaaf336b1a2934914f8350833667e93c16", /* SHA1 hash */
+      "a417adcf86b1de7c40d340977944805514e7637cba5ee83ebbdb2443562318a9", /* R */
+      "48cc6eff803308b02c9ddd739924138fd572a8e9c23764a1831ee3d819bf087a", /* S */
+    },
+    {
+      /* test vector 9 for P-256 */
+      "00e11c4eb57bdd6c266b5795e2e95d3f34f802f8ce8728a6d981b8787ecc102c", /* private_key */
+      "997a535b892adf06afe8fd17d91b52c9149e1d83c3c73179008727efcdba5521ef142fa48a4b75771a9f156d229c9d61b223a573fadb3138b3d0b4d411415a94", /* public_key */
+      "009d3dc147bc10b23b1156aa120e1933f31fa98a4233587941c355ca0b99f0c3", /* k */
+      "9dd377222efd2c6e4cf5a994747f545ed2bcc70a", /* SHA1 hash */
+      "d4ed66d8a5bc640e01fdf95a7ff2d0fe13692eb121bf6883fdc2be938d991060", /* R */
+      "f43168414538b8817a3e483502437fd1681a84f20539c055668eaa5a93fa4db0", /* S */
+    },
+    {
+      /* test vector 10 for P-256 */
+      "005eeb60901d07f49f433744715306cea06cf75507b74fb823223dc3ad33d20e", /* private_key */
+      "00fe1ad18e9656d9d5fdc1ccce2f268debeb64ebb0b39fed657d2051727b0a57ef4d02fda898266c96d7cf2031d1e0d56e158ee0a07fecb4c8a14a021d984584", /* public_key */
+      "007188abf3ed30221ff28c8adf1c2af5b40bb4021ea5d94672ee7308c5154807", /* k */
+      "62f3e1765cc481e53c0ecf643c50cc8bda6e9e72", /* SHA1 hash */
+      "d5604aecac4f8b69d5fe0ee8ee9d0d5918d378cc9c38862a85cab10182836f62", /* R */
+      "c7104858cd7bcc418b4f2c3673945d47e9567fa05a9028e00d9aed06ea854068", /* S */
+    },
+    {
+      /* test vector 11 for P-256 */
+      "009d5fd22302b0b2d0d8e90c623ba5361caa2ca05323972c62829ae160b4fbfe", /* private_key */
+      "adcf9c09044148d3e24ac412eb96853019cc39df61d3a6dc25a4a174d1e655030c53f552192b2e7093ef358d112758495e67b87a4e26904fbf3bbb899bde7c26", /* public_key */
+      "001b1768e9de3db0bb64886c4e3becf3af3c680bc49e28263bdeddd10ede71d7", /* k */
+      "5e243f001717af0409e621035167e5fdabe68b03", /* SHA1 hash */
+      "3e6dddb20cea388e6947b8b8af2860f5bc385db819df337e2f7c0564fc69ddb6", /* R */
+      "13b2f3fe0f6e3f33015ec27ca9bbaa4e0ef93712192d379ddbbf0913a8bd0459", /* S */
+    },
+    {
+      /* test vector 12 for P-256 */
+      "00412bc94f1a48ffee13c3e96cdfc94f3fe6ef9d62f2263a1182edcc62fe9c84", /* private_key */
+      "5ca2c1761d400a62617e79fe5fb28ce66dca62d0ac2637935ed1caf4947f70ed5d79c1b778d6d31c8491c38347f2678fc45c8675c74a5a42895b1ed5385fc7f9", /* public_key */
+      "00a0d4137f3e02ee6b17f1ce5204bf138802ec7136bc3a048579a28efec5635f", /* k */
+      "758ba7ab92d10523012ff3a20cdc099684b83ca5", /* SHA1 hash */
+      "b26219af8cbdb95c24ba669f0c54637b27ec05c7121a3c21b90efdc055f23fd2", /* R */
+      "7f9a56fd23f6e93034107dbcb3d5f25dcf325dbf59bb9fc86b7bb62b545ff259", /* S */
+    },
+    {
+      /* test vector 13 for P-256 */
+      "008127b4aa2aec3b3027ab7f8b5df1cb4154dc5c6a0330a232ec07e594d306cc", /* private_key */
+      "79899b96a440c912e46e31c64dcdb8c18d3d8a29b775e4c0ffece91fafb7c48d4f14689ded44becc4d7401bf39cc368fa183feba2e416ce1617d59fe4c2ba77c", /* public_key */
+      "00d30706db4e88261037558bf275fb93c7d8778fe20b832e4e3b9b162b1ed12b", /* k */
+      "e18b1ba2f854a3c469321f74d93a1bfd1060bcb6", /* SHA1 hash */
+      "54e82ea0aff83dfbeb8cea1fdd7d6950d6dd3446c1ee524553c60d5481cc521e", /* R */
+      "f7514314df4c0eb7fe0d95df0fc6fe5e38b8590613555a8db2869c6f8741dc25", /* S */
+    },
+    {
+      /* test vector 14 for P-256 */
+      "00d007e1b9afcc312eec9cecffa0280752bbd1953182edef12f3fc366e8f4356", /* private_key */
+      "d6606271131e7e7e617a81aa11f09e7ed56311828823367a869b454040b3f905cf4897766131aa8b7f80453a15bf90f7517878579d5a4f973aea5bb11542e07f", /* public_key */
+      "00c03c3b8b1e40cb328a61d51783356935625884399e26a5828f387c2bde6ebc", /* k */
+      "0f7b55549fab573c0361b832ad0be8cdeef91b56", /* SHA1 hash */
+      "b5b417619bf9fa89d50b3e22782a2de80a86db67e728114e6e0e91cab1a41612", /* R */
+      "e43e8111258bea6f5c96bd6d66715748fbee756da418de90f64066c6b3e072f1", /* S */
+    },
+    {
+      /* test vector 15 for P-256 */
+      "708309a7449e156b0db70e5b52e606c7e094ed676ce8953bf6c14757c826f590", /* private_key */
+      "29578c7ab6ce0d11493c95d5ea05d299d536801ca9cbd50e9924e43b733b83ab08c8049879c6278b2273348474158515accaa38344106ef96803c5a05adc4800", /* public_key */
+      "58f741771620bdc428e91a32d86d230873e9140336fcfb1e122892ee1d501bdc", /* k */
+      "5e53611194b517b0ef4f704684850dfa387f99997d586d43c9e41530", /* SHA224 hash */
+      "4a19274429e40522234b8785dc25fc524f179dcc95ff09b3c9770fc71f54ca0d", /* R */
+      "58982b79a65b7320f5b92d13bdaecdd1259e760f0f718ba933fd098f6f75d4b7", /* S */
+    },
+    {
+      /* test vector 16 for P-256 */
+      "90c5386100b137a75b0bb495002b28697a451add2f1f22cb65f735e8aaeace98", /* private_key */
+      "4a92396ff7930b1da9a873a479a28a9896af6cc3d39345b949b726dc3cd978b5475abb18eaed948879b9c1453e3ef2755dd90f77519ec7b6a30297aad08e4931", /* public_key */
+      "36f853b5c54b1ec61588c9c6137eb56e7a708f09c57513093e4ecf6d739900e5", /* k */
+      "50be7b4f0e1fa36f06eb430ad4afe8f0cea2b97e060230f91ed1922b", /* SHA224 hash */
+      "38b29558511061cfabdc8e5bb65ac2976d1aa2ba9a5deab8074097b2172bb9ad", /* R */
+      "0de2cde610502b6e03c0b23602eafbcd3faf886c81d111d156b7aa550f5bcd51", /* S */
+    },
+    {
+      /* test vector 17 for P-256 */
+      "a3a43cece9c1abeff81099fb344d01f7d8df66447b95a667ee368f924bccf870", /* private_key */
+      "5775174deb0248112e069cb86f1546ac7a78bc2127d0cb953bad46384dd6be5ba27020952971cc0b0c3abd06e9ca3e141a4943f560564eba31e5288928bc7ce7", /* public_key */
+      "a0d9a7a245bd9b9aa86cecb89341c9de2e4f9b5d095a8150826c7ba7fb3e7df7", /* k */
+      "f51177ab6c34bf80ea72d687a670e4102987d1378bd9a4d973af4dad", /* SHA224 hash */
+      "b02a440add66a9ff9c3c0e9acf1be678f6bd48a10cbdec2ad6d186ffe05f3f2a", /* R */
+      "a98bea42aec56a1fcecec00a1cc69b01fcbcf5de7ac1b2f2dcc09b6db064f92b", /* S */
+    },
+    {
+      /* test vector 18 for P-256 */
+      "7bbc8ff13f6f921f21e949b224c16b7176c5984d312b671cf6c2e4841135fc7f", /* private_key */
+      "f888e913ec6f3cd8b31eb89e4f8aaa8887d30ae5348ed7118696949d5b8cc7c108895d09620500d244e5035e262dea3f2867cd8967b226324d5c05220d8b410c", /* public_key */
+      "21c942f3b487accbf7fadc1c4b7a6c7567ce876c195022459fa1ebf6d04ffbaa", /* k */
+      "03bf686dab49196f887f3a8083f1a39e26085127a9d9e6a78f22f652", /* SHA224 hash */
+      "2e6cc883b8acc904ee9691ef4a9f1f5a9e5fbfde847cda3be833f949fb9c7182", /* R */
+      "2ac48f7a930912131a8b4e3ab495307817c465d638c2a9ea5ae9e2808806e20a", /* S */
+    },
+    {
+      /* test vector 19 for P-256 */
+      "daf5ec7a4eebc20d9485796c355b4a65ad254fe19b998d0507e91ea24135f45d", /* private_key */
+      "137c465085c1b1b8cccbe9fccbe9d0295a331aaf332f3ed2e285d16e574b943bd3e8d5a24cd218c19760b0e85b35a8569945aa857cbf0fd6a3ce127581b217b6", /* public_key */
+      "343251dffa56e6a612fec7b078f9c3819eab402a72686b894a47a08fd97e6c23", /* k */
+      "40a7ece19f7f6a6473b209a7ac9441d59b00fc94ae0ded3423427c12", /* SHA224 hash */
+      "775e25a296bd259510ae9375f548997bec8a744900022945281dc8c4d94f2b5b", /* R */
+      "d87592ceab773ae103daebbb56a04144aaccb1e14efc1024dc36c0e382df1f70", /* S */
+    },
+    {
+      /* test vector 20 for P-256 */
+      "8729a8396f262dabd991aa404cc1753581cea405f0d19222a0b3f210de8ee3c5", /* private_key */
+      "82b1f1a7af9b48ca8452613d7032beb0e4f28fe710306aeccc959e4d03662a355e39f33574097b8d32b471a591972496f5d44db344c037d13f06fafc75f016fd", /* public_key */
+      "6de9e21f0b2cacc1762b3558fd44d3cf156b85dbef430dd28d59713bfb9cfa0b", /* k */
+      "f6c083325d6316e337c102b16bb96faa478a43b2dc0d56d51a4affed", /* SHA224 hash */
+      "a754b42720e71925d51fcef76151405a3696cc8f9fc9ca7b46d0b16edd7fb699", /* R */
+      "603924780439cc16ac4cf97c2c3065bc95353aa9179d0ab5f0322ca82f851cf2", /* S */
+    },
+    {
+      /* test vector 21 for P-256 */
+      "f1b62413935fc589ad2280f6892599ad994dae8ca3655ed4f7318cc89b61aa96", /* private_key */
+      "e0bbfe4016eea93e6f509518cbffc25d492de6ebbf80465a461caa5bdc0181593231ee7a119d84fa56e3034d50fea85929aec2eb437abc7646821e1bf805fb50", /* public_key */
+      "7a33eeb9f469afd55de2fb786847a1d3e7797929305c0f90d953b6f143bb8fc6", /* k */
+      "6890736262386d60424be27b3f95996ab696e1ddffdc4a03c256a7c0", /* SHA224 hash */
+      "96d1c9399948254ea381631fc0f43ea808110506db8aacf081df5535ac5eb8ad", /* R */
+      "73bf3691260dddd9997c97313f2a70783eacf8d15bdfb34bb13025cdfae72f70", /* S */
+    },
+    {
+      /* test vector 22 for P-256 */
+      "4caaa26f93f009682bbba6db6b265aec17b7ec1542bda458e8550b9e68eed18d", /* private_key */
+      "e3c58c1c254d11c7e781ad133e4c36dd1b5de362120d336a58e7b68813f3fbee59760db66120afe0d962c81a8e5586588fd19de2f40556371611c73af22c8a68", /* public_key */
+      "c0d37142dc8b0d614fad20c4d35af6eb819e259e513ddeac1e1c273e7e1dc1bb", /* k */
+      "e8ed2e73fe9e3c6bb087c5179bb357be4cd147bc66e70dc1fecc10fd", /* SHA224 hash */
+      "25dd8e4086c62a40d2a310e2f90f6af5cb7e677b4dfdb4dc4e99e23ea2f0e6dc", /* R */
+      "90ad62c179b0c9d61f521dde1cd762bfd224b5525c39c3706f2549313ddb4f39", /* S */
+    },
+    {
+      /* test vector 23 for P-256 */
+      "7af4b150bb7167cb68037f280d0823ce5320c01a92b1b56ee1b88547481b1de9", /* private_key */
+      "cb3634ec4f0cbb99986be788f889e586026d5a851e80d15382f1bdb1bda2bc7551e4e43bc16fb114896b18198a1aebe6054ba20ed0c0317c1b8776158c0e6bfb", /* public_key */
+      "98edd59fafbcaee5f64e84eb5ed59fff45d14aabada47cee2fa674377173627a", /* k */
+      "ca7e8c8c873346c85db9ac648509c8ccc9ab5651d91e35a248b951fb", /* SHA224 hash */
+      "261a1cdb0fd93c0fb06ea6068b6b03c330a12f621a7eba76682a1d152c0e8d08", /* R */
+      "7ca049bad54feee101d6db807635ffb8bdb05a38e445c8c3d65d60df143514c5", /* S */
+    },
+    {
+      /* test vector 24 for P-256 */
+      "52ad53e849e30bec0e6345c3e9d98ebc808b19496c1ef16d72ab4a00bbb8c634", /* private_key */
+      "7cca1334bfc2a78728c50b370399be3f9690d445aa03c701da643eeb0b0f7fa83f7522238668e615405e49b2f63faee58286000a30cdb4b564ac0df99bc8950f", /* public_key */
+      "8650c30712fc253610884fbba4a332a4574d4b7822f7776cab1df8f5fa05442a", /* k */
+      "3367c395a9ad7b8214c48658f2a4b377b6b0288ba272a4fbfeaa48df", /* SHA224 hash */
+      "a18194c7ac5829afc408d78dde19542837e7be82706c3941b2d9c5e036bb51e0", /* R */
+      "188ead1cdf7c1d21114ff56d0421ffd501ab978ef58337462c0fa736d86299af", /* S */
+    },
+    {
+      /* test vector 25 for P-256 */
+      "80754962a864be1803bc441fa331e126005bfc6d8b09ed38b7e69d9a030a5d27", /* private_key */
+      "0aaeed6dd1ae020d6eefc98ec4241ac93cbd3c8afed05bb28007e7da5727571b2dda1d5b7872eb94dfffb456115037ff8d3e72f8ebdd8fcfc42391f96809be69", /* public_key */
+      "738e050aeefe54ecba5be5f93a97bbcb7557d701f9da2d7e88483454b97b55a8", /* k */
+      "a36a7d6424763633320ca799667f1b79955f079fb1b6dc264058af41", /* SHA224 hash */
+      "8cb9f41dfdcb9604e0725ac9b78fc0db916dc071186ee982f6dba3da36f02efa", /* R */
+      "5c87fe868fd4282fb114f5d70e9590a10a5d35cedf3ff6402ba5c4344738a32e", /* S */
+    },
+    {
+      /* test vector 26 for P-256 */
+      "cfa8c8bd810eb0d73585f36280ecdd296ee098511be8ad5eac68984eca8eb19d", /* private_key */
+      "c227a2af15dfa8734e11c0c50f77e24e77ed58dd8cccf1b0e9fa06bee1c64766b686592ce3745eb300d2704083db55e1fa8274e4cb7e256889ccc0bb34a60570", /* public_key */
+      "2d6b449bb38b543d6b6d34ff8cb053f5e5b337f949b069b21f421995ebb28823", /* k */
+      "864f18aa83fd3af6cdf6ac7f8526062d0c48a8d3c341cc23d53be864", /* SHA224 hash */
+      "5e89d3c9b103c2fa3cb8cebeec23640acda0257d63ffbe2d509bfc49fab1dca6", /* R */
+      "d70c5b1eeb29e016af9925798d24e166c23d58fedd2f1a3bbdb1ef78cdbfb63a", /* S */
+    },
+    {
+      /* test vector 27 for P-256 */
+      "b2021e2665ce543b7feadd0cd5a4bd57ffcc5b32deb860b4d736d9880855da3c", /* private_key */
+      "722e0abad4504b7832a148746153777694714eca220eced2b2156ca64cfed3ddf0351b357b3081e859c46cad5328c5afa10546e92bc6c3fd541796ac30397a75", /* public_key */
+      "b15bbce4b382145de7ecd670d947e77555ef7cd1693bd53c694e2b52b04d10e1", /* k */
+      "916924fcced069bf6956eeb4e8f09dc9bf928e8a690111b699e39eab", /* SHA224 hash */
+      "9d086dcd22da165a43091991bede9c1c14515e656633cb759ec2c17f51c35253", /* R */
+      "23595ad1cb714559faaecaf946beb9a71e584616030ceaed8a8470f4bf62768f", /* S */
+    },
+    {
+      /* test vector 28 for P-256 */
+      "0c9bce6a568ca239395fc3552755575cbcdddb1d89f6f5ab354517a057b17b48", /* private_key */
+      "4814d454495df7103e2da383aba55f7842fd84f1750ee5801ad32c10d0be6c7da0bd039d5097c8f0770477f6b18d247876e88e528bf0453eab515ffab8a9eda3", /* public_key */
+      "d414f1525cdcc41eba1652de017c034ebcc7946cb2efe4713d09f67c85b83153", /* k */
+      "ec2fb907b92865e501ce97f703cf6214a6de2303df472ba58145af16", /* SHA224 hash */
+      "84db02c678f9a21208cec8564d145a35ba8c6f26b4eb7e19522e439720dae44c", /* R */
+      "537c564da0d2dc5ac4376c5f0ca3b628d01d48df47a83d842c927e4d6db1e16d", /* S */
+    },
+    {
+      /* test vector 29 for P-256 */
+      "1daa385ec7c7f8a09adfcaea42801a4de4c889fb5c6eb4e92bc611d596d68e3f", /* private_key */
+      "f04e9f2831d9697ae146c7d4552e5f91085cc46778400b75b76f00205252941dbd267148174cd0c2b019cd0a5256e2f3f889d1e597160372b5a1339c8d787f10", /* public_key */
+      "7707db348ee6f60365b43a2a994e9b40ed56fe03c2c31c7e781bc4ffadcba760", /* k */
+      "b047a2a715335a1cc255beb983355e7d1363c610bf56df45d4503e69", /* SHA224 hash */
+      "5d95c385eeba0f15db0b80ae151912409128c9c80e554246067b8f6a36d85ea5", /* R */
+      "db5d8a1e345f883e4fcb3871276f170b783c1a1e9da6b6615913368a8526f1c3", /* S */
+    },
+    {
+      /* test vector 30 for P-256 */
+      "519b423d715f8b581f4fa8ee59f4771a5b44c8130b4e3eacca54a56dda72b464", /* private_key */
+      "1ccbe91c075fc7f4f033bfa248db8fccd3565de94bbfb12f3c59ff46c271bf83ce4014c68811f9a21a1fdb2c0e6113e06db7ca93b7404e78dc7ccd5ca89a4ca9", /* public_key */
+      "94a1bbb14b906a61a280f245f9e93c7f3b4a6247824f5d33b9670787642a68de", /* k */
+      "44acf6b7e36c1342c2c5897204fe09504e1e2efb1a900377dbc4e7a6a133ec56", /* SHA256 hash */
+      "f3ac8061b514795b8843e3d6629527ed2afd6b1f6a555a7acabb5e6f79c8c2ac", /* R */
+      "8bf77819ca05a6b2786c76262bf7371cef97b218e96f175a3ccdda2acc058903", /* S */
+    },
+    {
+      /* test vector 31 for P-256 */
+      "0f56db78ca460b055c500064824bed999a25aaf48ebb519ac201537b85479813", /* private_key */
+      "e266ddfdc12668db30d4ca3e8f7749432c416044f2d2b8c10bf3d4012aeffa8abfa86404a2e9ffe67d47c587ef7a97a7f456b863b4d02cfc6928973ab5b1cb39", /* public_key */
+      "6d3e71882c3b83b156bb14e0ab184aa9fb728068d3ae9fac421187ae0b2f34c6", /* k */
+      "9b2db89cb0e8fa3cc7608b4d6cc1dec0114e0b9ff4080bea12b134f489ab2bbc", /* SHA256 hash */
+      "976d3a4e9d23326dc0baa9fa560b7c4e53f42864f508483a6473b6a11079b2db", /* R */
+      "1b766e9ceb71ba6c01dcd46e0af462cd4cfa652ae5017d4555b8eeefe36e1932", /* S */
+    },
+    {
+      /* test vector 32 for P-256 */
+      "e283871239837e13b95f789e6e1af63bf61c918c992e62bca040d64cad1fc2ef", /* private_key */
+      "74ccd8a62fba0e667c50929a53f78c21b8ff0c3c737b0b40b1750b2302b0bde829074e21f3a0ef88b9efdf10d06aa4c295cc1671f758ca0e4cd108803d0f2614", /* public_key */
+      "ad5e887eb2b380b8d8280ad6e5ff8a60f4d26243e0124c2f31a297b5d0835de2", /* k */
+      "b804cf88af0c2eff8bbbfb3660ebb3294138e9d3ebd458884e19818061dacff0", /* SHA256 hash */
+      "35fb60f5ca0f3ca08542fb3cc641c8263a2cab7a90ee6a5e1583fac2bb6f6bd1", /* R */
+      "ee59d81bc9db1055cc0ed97b159d8784af04e98511d0a9a407b99bb292572e96", /* S */
+    },
+    {
+      /* test vector 33 for P-256 */
+      "a3d2d3b7596f6592ce98b4bfe10d41837f10027a90d7bb75349490018cf72d07", /* private_key */
+      "322f80371bf6e044bc49391d97c1714ab87f990b949bc178cb7c43b7c22d89e13c15d54a5cc6b9f09de8457e873eb3deb1fceb54b0b295da6050294fae7fd999", /* public_key */
+      "24fc90e1da13f17ef9fe84cc96b9471ed1aaac17e3a4bae33a115df4e5834f18", /* k */
+      "85b957d92766235e7c880ac5447cfbe97f3cb499f486d1e43bcb5c2ff9608a1a", /* SHA256 hash */
+      "d7c562370af617b581c84a2468cc8bd50bb1cbf322de41b7887ce07c0e5884ca", /* R */
+      "b46d9f2d8c4bf83546ff178f1d78937c008d64e8ecc5cbb825cb21d94d670d89", /* S */
+    },
+    {
+      /* test vector 34 for P-256 */
+      "53a0e8a8fe93db01e7ae94e1a9882a102ebd079b3a535827d583626c272d280d", /* private_key */
+      "1bcec4570e1ec2436596b8ded58f60c3b1ebc6a403bc5543040ba829630572448af62a4c683f096b28558320737bf83b9959a46ad2521004ef74cf85e67494e1", /* public_key */
+      "5d833e8d24cc7a402d7ee7ec852a3587cddeb48358cea71b0bedb8fabe84e0c4", /* k */
+      "3360d699222f21840827cf698d7cb635bee57dc80cd7733b682d41b55b666e22", /* SHA256 hash */
+      "18caaf7b663507a8bcd992b836dec9dc5703c080af5e51dfa3a9a7c387182604", /* R */
+      "77c68928ac3b88d985fb43fb615fb7ff45c18ba5c81af796c613dfa98352d29c", /* S */
+    },
+    {
+      /* test vector 35 for P-256 */
+      "4af107e8e2194c830ffb712a65511bc9186a133007855b49ab4b3833aefc4a1d", /* private_key */
+      "a32e50be3dae2c8ba3f5e4bdae14cf7645420d425ead94036c22dd6c4fc59e00d623bf641160c289d6742c6257ae6ba574446dd1d0e74db3aaa80900b78d4ae9", /* public_key */
+      "e18f96f84dfa2fd3cdfaec9159d4c338cd54ad314134f0b31e20591fc238d0ab", /* k */
+      "c413c4908cd0bc6d8e32001aa103043b2cf5be7fcbd61a5cec9488c3a577ca57", /* SHA256 hash */
+      "8524c5024e2d9a73bde8c72d9129f57873bbad0ed05215a372a84fdbc78f2e68", /* R */
+      "d18c2caf3b1072f87064ec5e8953f51301cada03469c640244760328eb5a05cb", /* S */
+    },
+    {
+      /* test vector 36 for P-256 */
+      "78dfaa09f1076850b3e206e477494cddcfb822aaa0128475053592c48ebaf4ab", /* private_key */
+      "8bcfe2a721ca6d753968f564ec4315be4857e28bef1908f61a366b1f03c974790f67576a30b8e20d4232d8530b52fb4c89cbc589ede291e499ddd15fe870ab96", /* public_key */
+      "295544dbb2da3da170741c9b2c6551d40af7ed4e891445f11a02b66a5c258a77", /* k */
+      "88fc1e7d849794fc51b135fa135deec0db02b86c3cd8cebdaa79e8689e5b2898", /* SHA256 hash */
+      "c5a186d72df452015480f7f338970bfe825087f05c0088d95305f87aacc9b254", /* R */
+      "84a58f9e9d9e735344b316b1aa1ab5185665b85147dc82d92e969d7bee31ca30", /* S */
+    },
+    {
+      /* test vector 37 for P-256 */
+      "80e692e3eb9fcd8c7d44e7de9f7a5952686407f90025a1d87e52c7096a62618a", /* private_key */
+      "a88bc8430279c8c0400a77d751f26c0abc93e5de4ad9a4166357952fe041e7672d365a1eef25ead579cc9a069b6abc1b16b81c35f18785ce26a10ba6d1381185", /* public_key */
+      "7c80fd66d62cc076cef2d030c17c0a69c99611549cb32c4ff662475adbe84b22", /* k */
+      "41fa8d8b4cd0a5fdf021f4e4829d6d1e996bab6b4a19dcb85585fe76c582d2bc", /* SHA256 hash */
+      "9d0c6afb6df3bced455b459cc21387e14929392664bb8741a3693a1795ca6902", /* R */
+      "d7f9ddd191f1f412869429209ee3814c75c72fa46a9cccf804a2f5cc0b7e739f", /* S */
+    },
+    {
+      /* test vector 38 for P-256 */
+      "5e666c0db0214c3b627a8e48541cc84a8b6fd15f300da4dff5d18aec6c55b881", /* private_key */
+      "1bc487570f040dc94196c9befe8ab2b6de77208b1f38bdaae28f9645c4d2bc3aec81602abd8345e71867c8210313737865b8aa186851e1b48eaca140320f5d8f", /* public_key */
+      "2e7625a48874d86c9e467f890aaa7cd6ebdf71c0102bfdcfa24565d6af3fdce9", /* k */
+      "2d72947c1731543b3d62490866a893952736757746d9bae13e719079299ae192", /* SHA256 hash */
+      "2f9e2b4e9f747c657f705bffd124ee178bbc5391c86d056717b140c153570fd9", /* R */
+      "f5413bfd85949da8d83de83ab0d19b2986613e224d1901d76919de23ccd03199", /* S */
+    },
+    {
+      /* test vector 39 for P-256 */
+      "f73f455271c877c4d5334627e37c278f68d143014b0a05aa62f308b2101c5308", /* private_key */
+      "b8188bd68701fc396dab53125d4d28ea33a91daf6d21485f4770f6ea8c565dde423f058810f277f8fe076f6db56e9285a1bf2c2a1dae145095edd9c04970bc4a", /* public_key */
+      "62f8665fd6e26b3fa069e85281777a9b1f0dfd2c0b9f54a086d0c109ff9fd615", /* k */
+      "e138bd577c3729d0e24a98a82478bcc7482499c4cdf734a874f7208ddbc3c116", /* SHA256 hash */
+      "1cc628533d0004b2b20e7f4baad0b8bb5e0673db159bbccf92491aef61fc9620", /* R */
+      "880e0bbf82a8cf818ed46ba03cf0fc6c898e36fca36cc7fdb1d2db7503634430", /* S */
+    },
+    {
+      /* test vector 40 for P-256 */
+      "b20d705d9bd7c2b8dc60393a5357f632990e599a0975573ac67fd89b49187906", /* private_key */
+      "51f99d2d52d4a6e734484a018b7ca2f895c2929b6754a3a03224d07ae61166ce4737da963c6ef7247fb88d19f9b0c667cac7fe12837fdab88c66f10d3c14cad1", /* public_key */
+      "72b656f6b35b9ccbc712c9f1f3b1a14cbbebaec41c4bca8da18f492a062d6f6f", /* k */
+      "17b03f9f00f6692ccdde485fc63c4530751ef35da6f71336610944b0894fcfb8", /* SHA256 hash */
+      "9886ae46c1415c3bc959e82b760ad760aab66885a84e620aa339fdf102465c42", /* R */
+      "2bf3a80bc04faa35ebecc0f4864ac02d349f6f126e0f988501b8d3075409a26c", /* S */
+    },
+    {
+      /* test vector 41 for P-256 */
+      "d4234bebfbc821050341a37e1240efe5e33763cbbb2ef76a1c79e24724e5a5e7", /* private_key */
+      "8fb287f0202ad57ae841aea35f29b2e1d53e196d0ddd9aec24813d64c0922fb71f6daff1aa2dd2d6d3741623eecb5e7b612997a1039aab2e5cf2de969cfea573", /* public_key */
+      "d926fe10f1bfd9855610f4f5a3d666b1a149344057e35537373372ead8b1a778", /* k */
+      "c25beae638ff8dcd370e03a6f89c594c55bed1277ee14d83bbb0ef783a0517c7", /* SHA256 hash */
+      "490efd106be11fc365c7467eb89b8d39e15d65175356775deab211163c2504cb", /* R */
+      "644300fc0da4d40fb8c6ead510d14f0bd4e1321a469e9c0a581464c7186b7aa7", /* S */
+    },
+    {
+      /* test vector 42 for P-256 */
+      "b58f5211dff440626bb56d0ad483193d606cf21f36d9830543327292f4d25d8c", /* private_key */
+      "68229b48c2fe19d3db034e4c15077eb7471a66031f28a980821873915298ba76303e8ee3742a893f78b810991da697083dd8f11128c47651c27a56740a80c24c", /* public_key */
+      "e158bf4a2d19a99149d9cdb879294ccb7aaeae03d75ddd616ef8ae51a6dc1071", /* k */
+      "5eb28029ebf3c7025ff2fc2f6de6f62aecf6a72139e1cba5f20d11bbef036a7f", /* SHA256 hash */
+      "e67a9717ccf96841489d6541f4f6adb12d17b59a6bef847b6183b8fcf16a32eb", /* R */
+      "9ae6ba6d637706849a6a9fc388cf0232d85c26ea0d1fe7437adb48de58364333", /* S */
+    },
+    {
+      /* test vector 43 for P-256 */
+      "54c066711cdb061eda07e5275f7e95a9962c6764b84f6f1f3ab5a588e0a2afb1", /* private_key */
+      "0a7dbb8bf50cb605eb2268b081f26d6b08e012f952c4b70a5a1e6e7d46af98bbf26dd7d799930062480849962ccf5004edcfd307c044f4e8f667c9baa834eeae", /* public_key */
+      "646fe933e96c3b8f9f507498e907fdd201f08478d0202c752a7c2cfebf4d061a", /* k */
+      "12135386c09e0bf6fd5c454a95bcfe9b3edb25c71e455c73a212405694b29002", /* SHA256 hash */
+      "b53ce4da1aa7c0dc77a1896ab716b921499aed78df725b1504aba1597ba0c64b", /* R */
+      "d7c246dc7ad0e67700c373edcfdd1c0a0495fc954549ad579df6ed1438840851", /* S */
+    },
+    {
+      /* test vector 44 for P-256 */
+      "34fa4682bf6cb5b16783adcd18f0e6879b92185f76d7c920409f904f522db4b1", /* private_key */
+      "105d22d9c626520faca13e7ced382dcbe93498315f00cc0ac39c4821d0d737376c47f3cbbfa97dfcebe16270b8c7d5d3a5900b888c42520d751e8faf3b401ef4", /* public_key */
+      "a6f463ee72c9492bc792fe98163112837aebd07bab7a84aaed05be64db3086f4", /* k */
+      "aea3e069e03c0ff4d6b3fa2235e0053bbedc4c7e40efbc686d4dfb5efba4cfed", /* SHA256 hash */
+      "542c40a18140a6266d6f0286e24e9a7bad7650e72ef0e2131e629c076d962663", /* R */
+      "4f7f65305e24a6bbb5cff714ba8f5a2cee5bdc89ba8d75dcbf21966ce38eb66f", /* S */
+    },
+    {
+      /* test vector 45 for P-256 */
+      "b6faf2c8922235c589c27368a3b3e6e2f42eb6073bf9507f19eed0746c79dced", /* private_key */
+      "e0e7b99bc62d8dd67883e39ed9fa0657789c5ff556cc1fd8dd1e2a55e9e3f24363fbfd0232b95578075c903a4dbf85ad58f8350516e1ec89b0ee1f5e1362da69", /* public_key */
+      "9980b9cdfcef3ab8e219b9827ed6afdd4dbf20bd927e9cd01f15762703487007", /* k */
+      "d9c83b92fa0979f4a5ddbd8dd22ab9377801c3c31bf50f932ace0d2146e2574da0d5552dbed4b18836280e9f94558ea6", /* SHA384 hash */
+      "f5087878e212b703578f5c66f434883f3ef414dc23e2e8d8ab6a8d159ed5ad83", /* R */
+      "306b4c6c20213707982dffbb30fba99b96e792163dd59dbe606e734328dd7c8a", /* S */
+    },
+    {
+      /* test vector 46 for P-256 */
+      "118958fd0ff0f0b0ed11d3cf8fa664bc17cdb5fed1f4a8fc52d0b1ae30412181", /* private_key */
+      "afda82260c9f42122a3f11c6058839488f6d7977f6f2a263c67d06e27ea2c3550ae2bbdd2207c590332c5bfeb4c8b5b16622134bd4dc55382ae806435468058b", /* public_key */
+      "23129a99eeda3d99a44a5778a46e8e7568b91c31fb7a8628c5d9820d4bed4a6b", /* k */
+      "76c8df4563375d34656f2d1dd3445c9d9f0c8da59dc015fa6122237e1a02039998c16b3935e281160923c6e21115d0a9", /* SHA384 hash */
+      "e446600cab1286ebc3bb332012a2f5cc33b0a5ef7291d5a62a84de5969d77946", /* R */
+      "cf89b12793ee1792eb26283b48fa0bdcb45ae6f6ad4b02564bf786bb97057d5a", /* S */
+    },
+    {
+      /* test vector 47 for P-256 */
+      "3e647357cd5b754fad0fdb876eaf9b1abd7b60536f383c81ce5745ec80826431", /* private_key */
+      "702b2c94d039e590dd5c8f9736e753cf5824aacf33ee3de74fe1f5f7c858d5ed0c28894e907af99fb0d18c9e98f19ac80dd77abfa4bebe45055c0857b82a0f4d", /* public_key */
+      "9beab7722f0bcb468e5f234e074170a60225255de494108459abdf603c6e8b35", /* k */
+      "bad1b2c4c35c54eede5d9dee6f6821bb0254395ae6a689ae7289790448ff787ea4e495ea418c0759c51144a74eba3ac9", /* SHA384 hash */
+      "c4021fb7185a07096547af1fb06932e37cf8bd90cf593dea48d48614fa237e5e", /* R */
+      "7fb45d09e2172bec8d3e330aa06c43fbb5f625525485234e7714b7f6e92ba8f1", /* S */
+    },
+    {
+      /* test vector 48 for P-256 */
+      "76c17c2efc99891f3697ba4d71850e5816a1b65562cc39a13da4b6da9051b0fd", /* private_key */
+      "d12512e934c367e4c4384dbd010e93416840288a0ba00b299b4e7c0d91578b57ebf8835661d9b578f18d14ae4acf9c357c0dc8b7112fc32824a685ed72754e23", /* public_key */
+      "77cffa6f9a73904306f9fcd3f6bbb37f52d71e39931bb4aec28f9b076e436ccf", /* k */
+      "c248cc5eb23ed0f6f03de308fffed1e5fdd918aef379946d7b66b8924dc38306feb28e85cc5ab5d7a3a0e55087ddecde", /* SHA384 hash */
+      "4d5a9d95b0f09ce8704b0f457b39059ee606092310df65d3f8ae7a2a424cf232", /* R */
+      "7d3c014ca470a73cef1d1da86f2a541148ad542fbccaf9149d1b0b030441a7eb", /* S */
+    },
+    {
+      /* test vector 49 for P-256 */
+      "67b9dea6a575b5103999efffce29cca688c781782a41129fdecbce76608174de", /* private_key */
+      "b4238b029fc0b7d9a5286d8c29b6f3d5a569e9108d44d889cd795c4a385905be8cb3fff8f6cca7187c6a9ad0a2b1d9f40ae01b32a7e8f8c4ca75d71a1fffb309", /* public_key */
+      "d02617f26ede3584f0afcfc89554cdfb2ae188c192092fdde3436335fafe43f1", /* k */
+      "b05d944f6752bfe003526499bb4d8721c0d25a7901999f67519b17665e907cd148b2ff1b451248d292866bcc81b506d9", /* SHA384 hash */
+      "26fd9147d0c86440689ff2d75569795650140506970791c90ace0924b44f1586", /* R */
+      "00a34b00c20a8099df4b0a757cbef8fea1cb3ea7ced5fbf7e987f70b25ee6d4f", /* S */
+    },
+    {
+      /* test vector 50 for P-256 */
+      "ecf644ea9b6c3a04fdfe2de4fdcb55fdcdfcf738c0b3176575fa91515194b566", /* private_key */
+      "c3bdc7c795ec94620a2cfff614c13a3390a5e86c892e53a24d3ed22228bc85bf70480fc5cf4aacd73e24618b61b5c56c1ced8c4f1b869580ea538e68c7a61ca3", /* public_key */
+      "53291d51f68d9a12d1dcdc58892b2f786cc15f631f16997d2a49bace513557d4", /* k */
+      "847325a13b72de5a15cd899ced0920b8543ab26f9d3877fde99c5018efc78ddf14c00f88b06af7971181923aa46624d4", /* SHA384 hash */
+      "a860c8b286edf973ce4ce4cf6e70dc9bbf3818c36c023a845677a9963705df8b", /* R */
+      "5630f986b1c45e36e127dd7932221c4272a8cc6e255e89f0f0ca4ec3a9f76494", /* S */
+    },
+    {
+      /* test vector 51 for P-256 */
+      "4961485cbc978f8456ec5ac7cfc9f7d9298f99415ecae69c8491b258c029bfee", /* private_key */
+      "8d40bf2299e05d758d421972e81cfb0cce68b949240dc30f315836acc70bef035674e6f77f8b46f46cca937d83b128dffbe9bd7e0d3d08aa2cbbfdfb16f72c9a", /* public_key */
+      "373a825b5a74b7b9e02f8d4d876b577b4c3984168d704ba9f95b19c05ed590af", /* k */
+      "fd30608cf408dac5886ca156bdce7f75067e18172af79ca84f8d60d011b8a6b5ea33a92554d1ea34b105d5bd09062d47", /* SHA384 hash */
+      "ef6fb386ad044b63feb7445fa16b10319018e9cea9ef42bca83bdad01992234a", /* R */
+      "ac1f42f652eb1786e57be01d847c81f7efa072ba566d4583af4f1551a3f76c65", /* S */
+    },
+    {
+      /* test vector 52 for P-256 */
+      "587907e7f215cf0d2cb2c9e6963d45b6e535ed426c828a6ea2fb637cca4c5cbd", /* private_key */
+      "660da45c413cc9c9526202c16b402af602d30daaa7c342f1e722f15199407f31e6f8cbb06913cc718f2d69ba2fb3137f04a41c27c676d1a80fbf30ea3ca46439", /* public_key */
+      "6b8eb7c0d8af9456b95dd70561a0e902863e6dfa1c28d0fd4a0509f1c2a647b2", /* k */
+      "9d21e70e88c43cbab056c5fdeb63baa2660ebc44e0d1ef781f8f6bf58b28e3a2c9d5db051c8da3ba34796d8bcc7ba5cb", /* SHA384 hash */
+      "08fabf9b57de81875bfa7a4118e3e44cfb38ec6a9b2014940207ba3b1c583038", /* R */
+      "a58d199b1deba7350616230d867b2747a3459421811c291836abee715b8f67b4", /* S */
+    },
+    {
+      /* test vector 53 for P-256 */
+      "24b1e5676d1a9d6b645a984141a157c124531feeb92d915110aef474b1e27666", /* private_key */
+      "b4909a5bdf25f7659f4ef35e4b811429fb2c59126e3dad09100b46aea6ebe7a6760ae015fa6af5c9749c4030fdb5de6e58c6b5b1944829105cf7edf7d3a22cfb", /* public_key */
+      "88794923d8943b5dbcc7a7a76503880ff7da632b0883aaa60a9fcc71bf880fd6", /* k */
+      "0bc6a254fa0016a5aa608309f9a97cf0c879370bae0b7b460da17c2694e8414db39ec8b5f943167372610fc146dd8b28", /* SHA384 hash */
+      "6ec9a340b77fae3c7827fa96d997e92722ff2a928217b6dd3c628f3d49ae4ce6", /* R */
+      "637b54bbcfb7e7d8a41ea317fcfca8ad74eb3bb6b778bc7ef9dec009281976f7", /* S */
+    },
+    {
+      /* test vector 54 for P-256 */
+      "bce49c7b03dcdc72393b0a67cf5aa5df870f5aaa6137ada1edc7862e0981ec67", /* private_key */
+      "c786d9421d67b72b922cf3def2a25eeb5e73f34543eb50b152e738a98afb0ca56796271e79e2496f9e74b126b1123a3d067de56b5605d6f51c8f6e1d5bb93aba", /* public_key */
+      "89e690d78a5e0d2b8ce9f7fcbf34e2605fd9584760fa7729043397612dd21f94", /* k */
+      "12520a7ef4f05f91b9f9a0fba73eddc813413c4d4764dc1c4b773c4afd5cd77b0e7f09d56e5931aec2958407c02774c0", /* SHA384 hash */
+      "07e5054c384839584624e8d730454dc27e673c4a90cbf129d88b91250341854d", /* R */
+      "f7e665b88614d0c5cbb3007cafe713763d81831525971f1747d92e4d1ca263a7", /* S */
+    },
+    {
+      /* test vector 55 for P-256 */
+      "73188a923bc0b289e81c3db48d826917910f1b957700f8925425c1fb27cabab9", /* private_key */
+      "86662c014ab666ee770723be8da38c5cd299efc6480fc6f8c3603438fa8397b9f26b3307a650c3863faaa5f642f3ba1384c3d3a02edd3d48c657c269609cc3fc", /* public_key */
+      "ec90584ab3b383b590626f36ed4f5110e49888aec7ae7a9c5ea62dd2dc378666", /* k */
+      "4b3a6ea660aac1e87dae5a252ab5588b5292d713f8c146f1a92d7b72f64bc91663c46e2beb33832e92ec0dccdf033f87", /* SHA384 hash */
+      "13e9ad59112fde3af4163eb5c2400b5e9a602576d5869ac1c569075f08c90ff6", /* R */
+      "708ac65ff2b0baaccc6dd954e2a93df46016bd04457636de06798fcc17f02be5", /* S */
+    },
+    {
+      /* test vector 56 for P-256 */
+      "f637d55763fe819541588e0c603f288a693cc66823c6bb7b8e003bd38580ebce", /* private_key */
+      "74a4620c578601475fc169a9b84be613b4a16cb6acab8fd98848a6ec9fbd133d42b9e35d347c107e63bd55f525f915bcf1e3d2b81d002d3c39acf10fc30645a1", /* public_key */
+      "4d578f5099636234d9c1d566f1215d5d887ae5d47022be17dbf32a11a03f053b", /* k */
+      "a357e9fa283e8699373cb7c027e4c86084259f08662fd0fc064e7b2f6a33562fb2a9e938962eda99f43e5e2b012822b8", /* SHA384 hash */
+      "113a933ebc4d94ce1cef781e4829df0c493b0685d39fb2048ce01b21c398dbba", /* R */
+      "3005bd4ec63dbd04ce9ff0c6246ad65d27fcf62edb2b7e461589f9f0e7446ffd", /* S */
+    },
+    {
+      /* test vector 57 for P-256 */
+      "2e357d51517ff93b821f895932fddded8347f32596b812308e6f1baf7dd8a47f", /* private_key */
+      "7e4078a1d50c669fb2996dd9bacb0c3ac7ede4f58fa0fa1222e78dbf5d1f41860014e46e90cc171fbb83ea34c6b78202ea8137a7d926f0169147ed5ae3d6596f", /* public_key */
+      "be522b0940b9a40d84bf790fe6abdc252877e671f2efa63a33a65a512fc2aa5c", /* k */
+      "347d91b8295d9321c84ce2a5e1c5257c4ffaf0006d884ff7337d386c63f532db444a873b8047ba373bb3538b5664ab31", /* SHA384 hash */
+      "a26b9ad775ac37ff4c7f042cdc4872c5e4e5e800485f488ddfaaed379f468090", /* R */
+      "f88eae2019bebbba62b453b8ee3472ca5c67c267964cffe0cf2d2933c1723dff", /* S */
+    },
+    {
+      /* test vector 58 for P-256 */
+      "77d60cacbbac86ab89009403c97289b5900466856887d3e6112af427f7f0f50b", /* private_key */
+      "a62032dfdb87e25ed0c70cad20d927c7effeb2638e6c88ddd670f74df16090e544c5ee2cf740ded468f5d2efe13daa7c5234645a37c073af35330d03a4fed976", /* public_key */
+      "06c1e692b045f425a21347ecf72833d0242906c7c1094f805566cdcb1256e394", /* k */
+      "46252c7ed042d8b1f691a46b4f6ca5395106871bd413e277a3812beb1757d9fb056a9805aa31376fd60e0ac567265cdd", /* SHA384 hash */
+      "eb173b51fb0aec318950d097e7fda5c34e529519631c3e2c9b4550b903da417d", /* R */
+      "ca2c13574bf1b7d56e9dc18315036a31b8bceddf3e2c2902dcb40f0cc9e31b45", /* S */
+    },
+    {
+      /* test vector 59 for P-256 */
+      "486854e77962117f49e09378de6c9e3b3522fa752b10b2c810bf48db584d7388", /* private_key */
+      "760b5624bd64d19c866e54ccd74ad7f98851afdbc3ddeae3ec2c52a135be9cfafeca15ce9350877102eee0f5af18b2fed89dc86b7df0bf7bc2963c1638e36fe8", /* public_key */
+      "e4f77c6442eca239b01b0254e11a4182782d96f48ab521cc3d1d68df12b5a41a", /* k */
+      "1ec1470e867e27ab4800998382f623e27fc2a897a497e6a9cb7c3584b42080c65dbe1270dc479a454566653abd402f02", /* SHA384 hash */
+      "bdff14e4600309c2c77f79a25963a955b5b500a7b2d34cb172cd6acd52905c7b", /* R */
+      "b0479cdb3df79923ec36a104a129534c5d59f622be7d613aa04530ad2507d3a2", /* S */
+    },
+    {
+      /* test vector 60 for P-256 */
+      "9dd0d3a3d514c2a8adb162b81e3adfba3299309f7d2018f607bdb15b1a25f499", /* private_key */
+      "6b738de3398b6ac57b9591f9d7985dd4f32137ad3460dcf8970c1390cb9eaf8d83bc61e26d2bbbd3cf2d2ab445a2bc4ab5dde41f4a13078fd1d3cc36ab596d57", /* public_key */
+      "9106192170ccb3c64684d48287bb81bbed51b40d503462c900e5c7aae43e380a", /* k */
+      "a59ca4dd2b0347f4f2702a8962878a206775fd91047040be60463119f02aa829b7360b940b2785395406c280375c5d90ee655e51d4120df256b9a6287161c7fc", /* SHA512 hash */
+      "275fa760878b4dc05e9d157fedfd8e9b1c9c861222a712748cb4b7754c043fb1", /* R */
+      "699d906bb8435a05345af3b37e3b357786939e94caae257852f0503adb1e0f7e", /* S */
+    },
+    {
+      /* test vector 61 for P-256 */
+      "f9bf909b7973bf0e3dad0e43dcb2d7fa8bda49dbe6e5357f8f0e2bd119be30e6", /* private_key */
+      "f2a6674d4e86152a527199bed293fa63acde1b4d8a92b62e552210ba45c38792c72565c24f0eee6a094af341ddd8579747b865f91c8ed5b44cda8a19cc93776f", /* public_key */
+      "e547791f7185850f03d0c58419648f65b9d29cdc22ed1de2a64280220cfcafba", /* k */
+      "9e359350e87e7573ad9894cd4aad6c6202a58e9938d098dbf65650fc6f04fce3664b9adb234bfa0821788223a306daaa3e62bd46b19d7eb7a725bc5bce8998f3", /* SHA512 hash */
+      "4782903d2aaf8b190dab5cae2223388d2d8bd845b3875d37485c54e1ded1d3d8", /* R */
+      "dfb40e406bfa074f0bf832771b2b9f186e2211f0bca279644a0ca8559acf39da", /* S */
+    },
+    {
+      /* test vector 62 for P-256 */
+      "724567d21ef682dfc6dc4d46853880cfa86fe6fea0efd51fac456f03c3d36ead", /* private_key */
+      "70b877b5e365fcf08140b1eca119baba662879f38e059d074a2cb60b03ea5d395f56f94d591df40b9f3b8763ac4b3dbe622c956d5bd0c55658b6f46fa3deb201", /* public_key */
+      "79d6c967ed23c763ece9ca4b026218004c84dc2d4ccc86cf05c5d0f791f6279b", /* k */
+      "ff5e80ccbb51b75742a1f0e632b4c6cd119692f2aca337378f7eb2f3b17fc3d912828b7e1655d2263d8757715eea31493aa89dfe1db143a8fa13f89a00379938", /* SHA512 hash */
+      "2ba2ea2d316f8937f184ad3028e364574d20a202e4e7513d7af57ac2456804d1", /* R */
+      "64fe94968d18c5967c799e0349041b9e40e6c6c92ebb475e80dd82f51cf07320", /* S */
+    },
+    {
+      /* test vector 63 for P-256 */
+      "29c5d54d7d1f099d50f949bfce8d6073dae059c5a19cc70834722f18a7199edd", /* private_key */
+      "3088d4f45d274cc5f418c8ecc4cbcf96be87491f420250f8cbc01cdf2503ec47634db48198129237ed068c88ff5809f6211921a6258f548f4b64dd125921b78b", /* public_key */
+      "0508ad7774908b5705895fda5c3b7a3032bf85dab7232bf981177019f3d76460", /* k */
+      "e9518ad1c62d686b9df1f5ae1f6797d8c5944a65fcf2244b763f47b9bc5db8ec360cbd17180e6d24678bc36a1535276733bab7817610399ef6257ca43361dfa0", /* SHA512 hash */
+      "acd9f3b63626c5f32103e90e1dd1695907b1904aa9b14f2132caef331321971b", /* R */
+      "15c04a8bd6c13ed5e9961814b2f406f064670153e4d5465dcef63c1d9dd52a87", /* S */
+    },
+    {
+      /* test vector 64 for P-256 */
+      "0d8095da1abba06b0d349c226511f642dabbf1043ad41baa4e14297afe8a3117", /* private_key */
+      "75a45758ced45ecf55f755cb56ca2601d794ebeaeb2e6107fe2fc443f580e23c5303d47d5a75ec821d51a2ee7548448208c699eca0cd89810ffc1aa4faf81ead", /* public_key */
+      "5165c54def4026ab648f7768c4f1488bcb183f6db7ffe02c7022a529a116482a", /* k */
+      "9fd9a5f9b73f6d01894ceaf8a1e0327a0cac0dbc30153201bcccf09b6756e2f89198781e80a7ff5119cc2bb4402c731379f5ab5eda9264e3fe88b4b528e16598", /* SHA512 hash */
+      "ebc85fc4176b446b3384ccc62fc2526b45665561a0e7e9404ac376c90e450b59", /* R */
+      "8b2c09428e62c5109d17ed0cf8f9fd7c370d018a2a73f701effc9b17d04852c6", /* S */
+    },
+    {
+      /* test vector 65 for P-256 */
+      "52fe57da3427b1a75cb816f61c4e8e0e0551b94c01382b1a80837940ed579e61", /* private_key */
+      "2177e20a2092a46667debdcc21e7e45d6da72f124adecbc5ada6a7bcc7b401d5550e468f2626070a080afeeb98edd75a721eb773c8e62149f3e903cf9c4d7b61", /* public_key */
+      "0464fe9674b01ff5bd8be21af3399fad66f90ad30f4e8ee6e2eb9bcccfd5185c", /* k */
+      "bfc07b9a8a8941b99ac47d607356e5b68d7534fb3faccfbe97751397af359d31fe239179a1d856ffac49a9738e888f599123ee96ae202fb93b897e26bc83202e", /* SHA512 hash */
+      "f8250f073f34034c1cde58f69a85e2f5a030703ebdd4dbfb98d3b3690db7d114", /* R */
+      "a9e83e05f1d6e0fef782f186bedf43684c825ac480174d48b0e4d31505e27498", /* S */
+    },
+    {
+      /* test vector 66 for P-256 */
+      "003d91611445919f59bfe3ca71fe0bfdeb0e39a7195e83ac03a37c7eceef0df2", /* private_key */
+      "7b9c592f61aae0555855d0b9ebb6fd00fb6746e8842e2523565c858630b9ba00d35b2e168b1875bbc563bea5e8d63c4e38957c774a65e762959a349eaf263ba0", /* public_key */
+      "ef9df291ea27a4b45708f7608723c27d7d56b7df0599a54bc2c2fabbff373b40", /* k */
+      "a051dcee66f456d9786785444cee2a3a342a8e27a5ebdf0e91553a0d257eea11af3a7df7e9310b46d95021a1880cd3f064c73447d92a31bacdb889f1e1390f49", /* SHA512 hash */
+      "66d057fd39958b0e4932bacd70a1769bbadcb62e4470937b45497a3d4500fabb", /* R */
+      "6c853b889e18b5a49ee54b54dd1aaedfdd642e30eba171c5cab677f0df9e7318", /* S */
+    },
+    {
+      /* test vector 67 for P-256 */
+      "48f13d393899cd835c4193670ec62f28e4c4903e0bbe5817bf0996831a720bb7", /* private_key */
+      "82a1a96f4648393c5e42633ecdeb1d8245c78c5ea236b5bab460dedcc8924bc0e8cbf03c34b5154f876de19f3bb6fd43cd2eabf6e7c95467bcfa8c8fc42d76fd", /* public_key */
+      "efed736e627899fea944007eea39a4a63c0c2e26491cd12adb546be3e5c68f7d", /* k */
+      "e1a00e6e38599d7eba1f1a8a6c7337e4dcbdd4f436f47c57d17ef85829f7e266b6bff67a001598db6b9ac032ad160d6f928f8724d2f10928cf953bc76c3fd2fb", /* SHA512 hash */
+      "cf7fc24bdaa09ac0cca8497e13298b961380668613c7493954048c06385a7044", /* R */
+      "f38b1c8306cf82ab76ee3a772b14416b49993fe11f986e9b0f0593c52ec91525", /* S */
+    },
+    {
+      /* test vector 68 for P-256 */
+      "95c99cf9ec26480275f23de419e41bb779590f0eab5cf9095d37dd70cb75e870", /* private_key */
+      "42c292b0fbcc9f457ae361d940a9d45ad9427431a105a6e5cd90a345fe3507f7313b08fd2fa351908b3178051ee782cc62b9954ad95d4119aa564900f8ade70c", /* public_key */
+      "4c08dd0f8b72ae9c674e1e448d4e2afe3a1ee69927fa23bbff3716f0b99553b7", /* k */
+      "bdcf1926e90c980373954c67d3c3c06ccb1a5076957673f12ddf23fa0cce7b3dc3ec2aec143a1ba58094e3da45e2b160092e1d943cf8f22fad35f8348575a0cf", /* SHA512 hash */
+      "f2bc35eb1b8488b9e8d4a1dbb200e1abcb855458e1557dc1bf988278a174eb3b", /* R */
+      "ed9a2ec043a1d578e8eba6f57217976310e8674385ad2da08d6146c629de1cd9", /* S */
+    },
+    {
+      /* test vector 69 for P-256 */
+      "e15e835d0e2217bc7c6f05a498f20af1cd56f2f165c23d225eb3360aa2c5cbcf", /* private_key */
+      "89dd22052ec3ab4840206a62f2270c21e7836d1a9109a3407dd0974c7802b9aee91609ba35c7008b080c77a9068d97a14ca77b97299e74945217672b2fd5faf0", /* public_key */
+      "c9f621441c235fc47ec34eef4c08625df1ec74918e1f86075b753f2589f4c60b", /* k */
+      "da606bb1d0d25dd18a9c29096042e65e6b73086b30509962ea1aa75f25b74653c03a66620cba446f442765f28d7c55a5ff4f9693a6c7ce18e1196c25c12da48d", /* SHA512 hash */
+      "a70d1a2d555d599bfb8c9b1f0d43725341151d17a8d0845fa56f3563703528a7", /* R */
+      "4e05c45adf41783e394a5312f86e66871c4be4896948c85966879d5c66d54b37", /* S */
+    },
+    {
+      /* test vector 70 for P-256 */
+      "808c08c0d77423a6feaaffc8f98a2948f17726e67c15eeae4e672edbe388f98c", /* private_key */
+      "b0c0ad5e1f6001d8e9018ec611b2e3b91923e69fa6c98690ab644d650f640c42610539c0b9ed21ac0a2f27527c1a61d9b47cbf033187b1a6ada006eb5b2662ed", /* public_key */
+      "1f6d4a905c761a53d54c362976717d0d7fc94d222bb5489e4830080a1a67535d", /* k */
+      "efdb1d2143ecf0447a68e8156a7443897a56b31b4c0cfe499511a4a3ff6f32ba25515b3a20296a10d23378a24fb7de8c2ce606a7d93a9bd72aef3a34d1ff6401", /* SHA512 hash */
+      "83404dcf8320baf206381800071e6a75160342d19743b4f176960d669dd03d07", /* R */
+      "3f75dcf102008b2989f81683ae45e9f1d4b67a6ef6fd5c8af44828af80e1cfb5", /* S */
+    },
+    {
+      /* test vector 71 for P-256 */
+      "f7c6315f0081acd8f09c7a2c3ec1b7ece20180b0a6365a27dcd8f71b729558f9", /* private_key */
+      "250f7112d381c1751860045d9bcaf20dbeb25a001431f96ac6f19109362ffebb49fba9efe73546135a5a31ab3753e247034741ce839d3d94bd73936c4a17e4aa", /* public_key */
+      "68c299be2c0c6d52d208d5d1a9e0ffa2af19b4833271404e5876e0aa93987866", /* k */
+      "eeb09b1f4a74744909774bfe707977e5234db27026873fc7b5496e37d363ff82d5a1dd6fa6c97717aa0828a6f6325a2b7970e5d836ddfb63bf47b09f136eb9da", /* SHA512 hash */
+      "7b195e92d2ba95911cda7570607e112d02a1c847ddaa33924734b51f5d81adab", /* R */
+      "10d9f206755cef70ab5143ac43f3f8d38aea2644f31d52eaf3b472ee816e11e5", /* S */
+    },
+    {
+      /* test vector 72 for P-256 */
+      "f547735a9409386dbff719ce2dae03c50cb437d6b30cc7fa3ea20d9aec17e5a5", /* private_key */
+      "4ca87c5845fb04c2f76ae3273073b0523e356a445e4e95737260eba9e2d021db0f86475d07f82655320fdf2cd8db23b21905b1b1f2f9c48e2df87e24119c4880", /* public_key */
+      "91bd7d97f7ed3253cedefc144771bb8acbbda6eb24f9d752bbe1dd018e1384c7", /* k */
+      "8cd8e7876555a7393128336880c8002136e1008814a691528111220fd14158b7ff822226c67390739db56b368cf69cecc4cc147220be3d3ce587c8ad75b0f55a", /* SHA512 hash */
+      "008c1755d3df81e64e25270dbaa9396641556df7ffc7ac9add6739c382705397", /* R */
+      "77df443c729b039aded5b516b1077fecdd9986402d2c4b01734ba91e055e87fc", /* S */
+    },
+    {
+      /* test vector 73 for P-256 */
+      "26a1aa4b927a516b661986895aff58f40b78cc5d0c767eda7eaa3dbb835b5628", /* private_key */
+      "28afa3b0f81a0e95ad302f487a9b679fcdef8d3f40236ec4d4dbf4bb0cbba8b2bb4ac1be8405cbae8a553fbc28e29e2e689fabe7def26d653a1dafc023f3cecf", /* public_key */
+      "f98e1933c7fad4acbe94d95c1b013e1d6931fa8f67e6dbb677b564ef7c3e56ce", /* k */
+      "7a951d7de2e3552d16912a1d4381f047577f9fd7a8f55dc8ebfb5eac9c859ab8771e222bf56d3330201b82751d0aa5b6c21f42ada05db9955d46f62d530723e1", /* SHA512 hash */
+      "15a9a5412d6a03edd71b84c121ce9a94cdd166e40da9ce4d79f1afff6a395a53", /* R */
+      "86bbc2b6c63bad706ec0b093578e3f064736ec69c0dba59b9e3e7f73762a4dc3", /* S */
+    },
+    {
+      /* test vector 74 for P-256 */
+      "6a5ca39aae2d45aa331f18a8598a3f2db32781f7c92efd4f64ee3bbe0c4c4e49", /* private_key */
+      "c62cc4a39ace01006ad48cf49a3e71466955bbeeca5d318d672695df926b3aa4c85ccf517bf2ebd9ad6a9e99254def0d74d1d2fd611e328b4a3988d4f045fe6f", /* public_key */
+      "dac00c462bc85bf39c31b5e01df33e2ec1569e6efcb334bf18f0951992ac6160", /* k */
+      "4cb0debbdb572d89e2e46dcc6c2c63ef032792683032ce965b3e7fa79e3282039a705acbcc7bd07057a88b1e65852707934f10a67710ebefaa865201dfa6d4ff", /* SHA512 hash */
+      "6e7ff8ec7a5c48e0877224a9fa8481283de45fcbee23b4c252b0c622442c26ad", /* R */
+      "3dfac320b9c873318117da6bd856000a392b815659e5aa2a6a1852ccb2501df3", /* S */
+    },
+};
